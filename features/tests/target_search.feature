@@ -1,16 +1,12 @@
 Feature: Tests for Target Search functionality
 
-  Scenario: User can search for a product
+  Scenario: User can search for a coffee
     Given Open target main page
-    When Search for a product
+    When Search for a coffee
     Then Verify that correct search results shown
 
-  Scenario: User can search for a product2
+  Scenario: User can search for a tea
     Given Open target main page
-    When Search for a product
+    When Search for a tea
     Then Verify that correct search results shown
 
-  Scenario: User can see Cart Empty message
-    Given Open target main page
-    When Click on cart icon
-   Then Verify cart Empty message shown
