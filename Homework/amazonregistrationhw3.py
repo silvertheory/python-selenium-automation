@@ -36,7 +36,7 @@ password_check_field.send_keys("Password123")  #Updated Re-enter password for co
 
 # continue button
 continue_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#continue")))
-continue_button.click() # Updated 
+continue_button.click() # Updated
 
 # conditions of Use link
 conditions_of_use_link = driver.find_element(By.CSS_SELECTOR, 'a[href*="ap_register_notification_condition_of_use"]')
