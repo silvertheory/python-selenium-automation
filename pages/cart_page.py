@@ -6,4 +6,5 @@ class CartPage(Page):
     CART_EMPTY_TXT = (By.CSS_SELECTOR, "[data-test='boxEmptyMsg'] h1")
 
     def verify_cart_empty(self):
-        self.verify_text('Your cart is empty', *self.CART_EMPTY_TXT)
+        expected_text = 'Your cart is empty'
+        self.verify_text(expected_text, *self.CART_EMPTY_TXT)
