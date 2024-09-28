@@ -35,8 +35,3 @@ def verify_header(context):
     context.driver.find_element(By.CSS_SELECTOR, "[class*='styles_utilityHeaderContainer']")
 
 
-# Example with multiple variables:
-# @when('Login as {username} and {pw}')
-# def search_product(context, username, pw):
-#     context.driver.find_element(By.ID, 'username').send_keys(username)
-#     context.driver.find_element(By.ID, 'password').send_keys(pw)

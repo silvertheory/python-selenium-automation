@@ -4,6 +4,7 @@ Feature: Tests for Target Search functionality
     Given Open target main page
     When Search for coffee
     Then Verify that correct search results shown for coffee
+    Then Verify product coffee in URL
 
   Scenario: User can search for tea
     Given Open target main page
@@ -29,7 +30,6 @@ Feature: Tests for Target Search functionality
     And Confirm Add to Cart button from side navigation
     And Open cart page
     Then Verify cart has 1 item(s)
-    And Verify cart has correct product
     And Verify cart has correct product
 
   Scenario: Verify that user can see product names and images
