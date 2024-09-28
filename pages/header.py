@@ -21,3 +21,8 @@ class Header(Page):
     def click_sign_in(self):
         self.wait_to_be_clickable(*self.SIGN_IN_BTN)
         sleep(6)
+
+    def click_terms_conditions_link(self):
+        TERMS_CONDITIONS_LINK = (By.XPATH, "//a[contains(@class, 'gvPtqx') and text()='Target terms and conditions']")  # Adjust locator as needed
+        self.wait_to_be_clickable_click(*TERMS_CONDITIONS_LINK)
+        sleep(6)
